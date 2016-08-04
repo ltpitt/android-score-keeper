@@ -70,7 +70,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement_left_score(View view) {
         left_score = left_score - 1;
-        display_left_score(left_score);
+        if (left_score < 0) {
+            left_score = 0;
+            display_left_score(left_score);
+        } else {
+            display_left_score(left_score);
+        }
+
     }
 
     /**
@@ -86,7 +92,12 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement_right_score(View view) {
         right_score = right_score - 1;
-        display_right_score(right_score);
+        if (right_score < 0) {
+            right_score = 0;
+            display_right_score(right_score);
+        } else {
+            display_right_score(right_score);
+        }
     }
 
 
@@ -103,7 +114,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement_left_foul(View view) {
         left_foul = left_foul - 1;
-        display_left_foul(left_foul);
+        if (left_foul < 0) {
+            left_foul = 0;
+            display_left_foul(left_foul);
+        } else {
+            display_left_foul(left_foul);
+        }
+
     }
 
     /**
@@ -119,7 +136,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void decrement_right_foul(View view) {
         right_foul = right_foul - 1;
-        display_right_foul(right_foul);
+        if (right_foul < 0) {
+            right_foul = 0;
+            display_right_foul(right_foul);
+        } else {
+            display_right_foul(right_foul);
+        }
+
     }
 
     /**
